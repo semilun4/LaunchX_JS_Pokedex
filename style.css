@@ -5,7 +5,7 @@
 
 /* Imagen de fondo */
 body {
-    background-image: url(/img/fondo.webp);
+    background-image: url(./img/fondo.webp);
     background-size: cover;
     font-family: 'Roboto Mono', monospace;
     font-weight: 600;
