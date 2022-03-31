@@ -39,6 +39,9 @@ const fetchPokemon = event => {
             pokeImage("./img/error.gif");
             document.getElementById("poke-id").innerHTML = "404";
 			document.getElementById("poke-name").innerHTML = "ERROR";
+
+            pokeElement1.style.display = 'none';
+            pokeElement2.style.display = 'none';
 			// document.getElementById("pokemonTipo").innerHTML = "";
 			// document.getElementById("pokeStats").innerHTML = "";
 			// document.getElementById("pokeMoves").innerHTML = "";
