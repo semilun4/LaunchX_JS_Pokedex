@@ -21,11 +21,7 @@ const fetchPokemon = event => {
 
             pokeElement1.style.display = 'none';
             pokeElement2.style.display = 'none';
-			// document.getElementById("pokemonTipo").innerHTML = "";
-			// document.getElementById("pokeStats").innerHTML = "";
-			// document.getElementById("pokeMoves").innerHTML = "";
-			// document.getElementsByClassName("botones").style.display = "none";
-
+			
         } else {
             return res.json();
         }
@@ -58,7 +54,6 @@ const fetchPokemon = event => {
             let type1 = pokeElement[0];                 
             let type2 = pokeElement[1];
             pokeTypes(type1,type2,pokeTypesNumber)
-            pokeColors(pokeElement)
         }
         else{
             // Solo un tipo 
@@ -70,8 +65,6 @@ const fetchPokemon = event => {
         }
     })
 }
-
-
 
 const pokeImage = (url) => {
     const pokeImg = document.getElementById("poke-img");
@@ -103,13 +96,4 @@ const pokeTypes = (type1, type2, pokeTypesNumber) => {
          pokeElement2.style.display = 'none';
      }
 
-}
-
-const pokeColors = (pokeElement) => {
-
-    // const pokeElement1 = document.getElementById("poke-type1");
-    // pokeElement1.innerHTML = '';
-    // const pokeElement2 = document.getElementById("poke-type2");
-    // pokeElement2.innerHTML = '';
-    pokeElement.forEach(pokeColor =>  pokeColor = typeColors[pokeColor]);
 }
